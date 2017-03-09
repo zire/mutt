@@ -5,7 +5,7 @@ set folder = ~/Mail/herbert.yang.gmail.com/
 set spoolfile = "+INBOX"
 set postponed = "+drafts"
 source ~/.mutt/mailboxes
-source ~/.mutt/mutt-colors-solarized/mutt-colors-solarized-light-256.muttrc
+source ~/.mutt/mutt-colors-solarized/mutt-colors-solarized-light-16.muttrc
 set confirmappend = no
 
 alternative_order text/plain text/enriched text/html
