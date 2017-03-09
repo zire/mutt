@@ -1,2 +1,2 @@
 # sync Gmail IMAP every 10 minutes with offlineimap
-*/10 * * * * offlineimap -q -u quiet
+*/10 * * * * offlineimap -q -u quiet >> ~/.mutt/offlineimap.log	2>&1
