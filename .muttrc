@@ -26,7 +26,9 @@ set smart_wrap
 ignore *
 unignore From To Reply-To Cc Bcc Subject Date Organization X-Label X-Mailer User-Agent
 
-set index_format = "%4C %Z %{%b %d} %-15.15L %?M?(#%03M)&(%4l)? %?y?{%.20y}? %?g?{%.20g} ?%s (%c)"
+# set date_format = "%a,%b %d,%Y,%I:%M"
+# set index_format = "%4C %Z %{%b %d} %-15.15L %?M?(#%03M)&(%4l)? %?y?{%.20y}? %?g?{%.20g} ?%s (%c)"
+set index_format = "%4C | %Z %[%b %d %I:%M] %-15.15F (%-4.4c) %s"
 set status_chars  = " *%A"
 set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
 set pager_index_lines=8
