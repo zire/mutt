@@ -8,8 +8,8 @@ pythonfile = ~/.mutt/offlineimap.py
 localrepository = Gmail-Local
 remoterepository = Gmail-Remote
 status_backend = sqlite
-# autorefresh = 0.5
-# quick = 10
+autorefresh = 0.5
+quick = 10
 
 [Repository Gmail-Local]
 type = Maildir
@@ -22,7 +22,7 @@ remoteuser = herbert.yang@gmail.com
 remotepasseval = get_keychain_pass(account="herbert.yang@gmail.com", server="imap.gmail.com")
 realdelete = yes
 keepalive = 60
-# holdconnectionopen = yes
+holdconnectionopen = yes
 sslcacertfile = /usr/local/etc/openssl/cert.pem
 folderfilter = lambda folder: folder not in [	'[Gmail]/All Mail',
 												'[Gmail]/Important',
