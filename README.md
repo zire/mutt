@@ -33,29 +33,12 @@ List of all installed packages
 - mailcap, define applications to view different file types
 - offlineimap.py, retrieve password from Keychain on local OSX
 
-## Cron Configuration
-
-Absolute path for the command needs to be used to avoid `/bin/sh, offlineimap, command not found` error.
-
-To create a custom crontab file to define cron job
-
-	vim crontab.txt
-
-To run cron job with crontab
-
-	crontab crontab.txt
-	
-To see the current running cron jobs
-
-	crontab -l
-
-To remove a cron job
-
-	crontab -r
-
 ## References
 
+- [Steve Losh's Guide](http://stevelosh.com/blog/2012/10/the-homely-mutt/), the definitive guide, command by command, to walk through how to set up Mutt and Offlineimap.
 - Archlinux.org's guide on [Mutt](https://wiki.archlinux.org/index.php/mutt) and [Offlineimap](https://wiki.archlinux.org/index.php/OfflineIMAP) are extremely comprehensive and helpful.
 - [How I Use Offlineimap](http://bkanuka.com/articles/offlineimap-mutt/), useful scripts of using Offlineimap effectively to mitigate some of its known issues.
 - [Use Mac OS X's Keychain for Password Retrieval in OfflineIMAP](https://blog.aedifice.org/2010/02/01/use-mac-os-xs-keychain-for-password-retrieval-in-offlineimap/), important scripts that use `security` command line tool and `Keychain` app on OSX to retrieve password directly from Keychain, to avoid displaying Gmail password in plain-text in `.offlineimaprc` file.
+- [Solarized Color Schemes for Mutt](https://github.com/altercation/mutt-colors-solarized), get the right colors. 
+- [Setting up Launchd for Offlineimap](http://grantlucas.com/posts/2012/10/setting-launchd-offlineimap), how to use `launchd` to run Offlineimap in the background. Somehow `cron` just doesn't work with Offlineimap.
 

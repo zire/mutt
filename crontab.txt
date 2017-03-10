@@ -1,3 +1,4 @@
 # sync Gmail IMAP every 10 minutes with offlineimap
 
-*/15 * * * * /Users/zire/.nix-profile/bin/offlineimap -q -u quiet >> ~/.mutt/offlineimap.log	2>&1
+# */15 * * * * /Users/zire/.nix-profile/bin/offlineimap -q -u quiet >> ~/.mutt/offlineimap.log	2>&1
+*/15 * * * * /Users/zire/.nix-profile/bin/offlineimap -q -u blinkenlights
